@@ -10,7 +10,6 @@ void gate_nand :: clear()
 
 bool gate_nand :: run()
 {
-	if_p[2] = true;
 	p[2] = !(p[0] && p[1]);
 	return p[2];
 }

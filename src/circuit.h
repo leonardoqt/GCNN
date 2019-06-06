@@ -41,6 +41,11 @@ public:
 	2.	One gate at most runs once
 	3.	The second input of all in_gates are set to false (can change this rule)
 	*/
+	// Notes:
+	/*
+	1.	Consider allow out-gate to always run but if no non-out-gate can run then terminate
+	2.	Consider if no gate can run, allow next non-run gate to send false from output pin
+	*/
 
 	void mutate(double p_new);	// change pin to different group
 	
